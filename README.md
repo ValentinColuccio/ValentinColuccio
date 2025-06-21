@@ -61,7 +61,7 @@ I’m currently expanding my skills in:
 ### 📫 How to reach me?
 
 - 📧 **Email**: [valentincoluccio@gmail.com](mailto:valentincoluccio@gmail.com)  
-- 💼 **LinkedIn**: [linkedin.com/in/valentin-coluccio-804301359](www.linkedin.com/in/valentin-coluccio-804301359)  
+- 💼 **LinkedIn**: [linkedin.com/in/valentin-coluccio-804301359](https://www.linkedin.com/in/valentin-coluccio-804301359/)  
 - 📷 **Instagram (personal)**: [@valen_coluccio](https://www.instagram.com/valen_coluccio/)
 - 🛠 **GitHub**: [github.com/ValentinColuccio](https://github.com/ValentinColuccio)
 <!-- - 📄 **CV**: [View Resume](#) -->
