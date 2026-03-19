@@ -189,3 +189,6 @@ Functional model of a **robotic tower crane**, controlled by a **Raspberry Pi Ze
 <p align="center">
   <i>Thanks for stopping by!</i> 🚀
 </p>
+
+
+![Profile view counter on GitHub](https://komarev.com/ghpvc/?username=ValentinColuccio)
