@@ -1,194 +1,80 @@
-<h1 align="center">Hola 👋 Soy Valentin Coluccio</h1>
-<h3 align="center">🎓 Estudiante avanzado de Ingeniería en Mecatrónica | 🛠️ Robótica, Automatización y Sistemas Embebidos</h3>
+# 👋 Hi, I'm Valentín Coluccio
+
+### 🤖 Mechatronics Engineer · Industrial robotics, machine vision and PLC
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/Embedded_C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Qt](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+I build systems that do something in the physical world. Right now that means integrating collaborative robots, industrial cameras and PLCs into production lines: automated quality control, robotic cells and internal logistics with AMRs.
+
+I work as a project engineer at **eMoveSolutions**, an integrator of JAKA collaborative robots, SensoPart and OPT machine vision, iPlusMobot AMRs and Mitsubishi PLC automation. My work runs from bench setup to commissioning on the customer's floor — which usually means the interesting part is the day something doesn't work and nobody knows why.
+
+Mechatronics Engineering degree from **Universidad Nacional de Lomas de Zamora (UNLZ)**, Argentina.
 
 ---
 
-## 🇪🇸 Español
+## 🔬 Featured projects
 
-🎓 Estudiante avanzado de **Ingeniería en Mecatrónica**, actualmente **finalizando la carrera y preparando los últimos exámenes finales**, en la  
-_Universidad Nacional de Lomas de Zamora (UNLZ)_, Argentina.
+### 🫀 Preprocessor for Elvira — research, published
 
-💻 Interesado en el desarrollo de **sistemas que interactúan con el mundo físico**, con un enfoque mixto entre **industria e investigación aplicada**.  
-Trabajo principalmente con **Python**, tengo experiencia en **C para microcontroladores**, y he desarrollado soluciones que integran **visión por computadora**, **sistemas embebidos** y **automatización**.
+Graphical interface module built in PyQt5 and integrated into SALOME 9.13, acting as a preprocessor for the cardiac electrophysiology simulator Elvira. It centralizes mesh import, material and property definition, stimulus and solver configuration, and validated export of simulation files.
 
-🧠 Mis intereses incluyen:
-- Robótica y automatización
-- Interacción humano-máquina
-- Sistemas embebidos
+- Lead author, presented and published at **MECOM 2025** (Argentine Congress on Computational Mechanics)
+- The research team that validated it estimated a **60-70% reduction** in simulation setup time
+- Currently in use by PhD students in Spain and collaborators in Italy
+- Developed under an **EVC-CIN 2024** research grant
+- Published: https://doi.org/10.70567/mc.v42.ocsid8567
 
-🎮 *Nota adicional*: tengo experiencia extensa en **videojuegos de distintos géneros (FPS, RPG, MMORPG)**, lo cual considero una **ventaja cognitiva** en términos de:
-- Resolución de problemas
-- Toma de decisiones bajo presión
-- Pensamiento sistémico
-- Coordinación y adaptación a sistemas complejos
+### 🏗️ Robotic tower crane — final degree project
 
----
+<!-- Foto o GIF de la grúa acá -->
 
-## 🔬 Proyectos Destacados
+Scale storage and dispatch system built around a robotic tower crane. Incoming parts are identified by machine vision, stored in categorized positions, and dispatched on demand through voice commands.
 
-### 🧪 Proyecto de Investigación (Finalizado – en mejora continua)
+The architecture is distributed across three units: a PC running vision, speech recognition and the dispatcher; a Raspberry Pi Zero 2 WH holding the control logic, live inventory and kinematics, reached over TCP sockets; and an ESP32 driving four stepper motors over UART. Vision runs on a SensoPart VISOR Object AI industrial camera triggered by an IR sensor, speech recognition on Vosk with a wake word, and the operator interface is a PyQt5 HMI with live video, unified logging and remote control of both machines.
 
-**Interfaz gráfica para la configuración de simulaciones de electrofisiología cardíaca**, integrada en la plataforma **SALOME**, como módulo de preprocesado para el simulador **Elvira**.
+Built by a team of two. I was responsible for the vision system, the Raspberry Pi implementation and the HMI.
 
-- Autor principal (4 autores)
-- Presentado en **MECOM 2025 – Congreso de Mecánica Computacional de Argentina**
-- 📄 Publicado con DOI: https://doi.org/10.70567/mc.v42.ocsid8567
-- Automatiza la generación de archivos de entrada, asignación de materiales y configuración del solver
-- Mejora la usabilidad del simulador y reduce tiempos y errores en la preparación de simulaciones
+`Python` · `PyQt5` · `Vosk` · `Raspberry Pi Zero 2 WH` · `ESP32` · `TCP sockets` · `SensoPart VISOR`
 
----
+➡️ https://github.com/ValentinColuccio/Almacenamiento-con-Grua-Torre-Coluccio-Gomez
 
-### 🛠️ Práctica Profesional (Repositorio próximamente)
+### 🪁 4-axis CNC hot-wire cutter — supervised professional practice
 
-Desarrollo de una **cortadora de poliestireno para fabricación de alas de drones**, basada en un sistema **CNC de 4 ejes**.
+<!-- Foto de la máquina ensamblada acá -->
 
-- Drivers **RATTMOTOR**
-- Control mediante **Raspberry Pi 4B**
-- Enfoque en automatización, repetibilidad y aplicación industrial
+CNC machine with independent positioning at both ends of the cutting wire, for manufacturing variable-geometry airfoil profiles in expanded polystyrene for aeronautical prototypes. I redesigned a ten-year-old conceptual model to fit the components actually available, then built and integrated it.
+
+Control architecture is distributed: a Raspberry Pi 4B handles operation and supervision while a GRBL controller generates the STEP/DIR signals, after discarding direct generation from the Pi due to the non-deterministic timing of general-purpose Linux.
+
+`Raspberry Pi 4B` · `GRBL` · `G-code` · `bCNC` · `CATIA` · `SolidWorks` · `Fusion 360 (CAD/CAM)`
+
+➡️ https://github.com/ValentinColuccio/2026_1C_PPS_CortadoraDePolifanCNC_Coluccio
 
 ---
 
-### 🎓 Proyecto Final de Carrera (Repositorio próximamente)
+## 🧰 Tools & technologies
 
-Modelo funcional de una **grúa torre robótica**, controlada por **Raspberry Pi Zero 2W** y **Arduino**, capaz de:
-
-- Detectar y clasificar objetos mediante visión por computadora
-- Almacenarlos en posiciones categorizadas
-- Entregarlos bajo demanda mediante comandos de voz
-
----
-
-## 🧰 Herramientas y Tecnologías
-
-- 🐍 Python | 📟 C (Embebido)
-- 🤖 Raspberry Pi | Arduino
-- 👁️ OpenCV | TensorFlow
-- 🔧 Git | GitHub | VS Code
-- 🧩 Integración hardware–software
-
----
-
-## 🌱 En constante aprendizaje
-
-- Control avanzado de sistemas robóticos
-- Automatización industrial y CNC
-- Sistemas embebidos de bajo consumo
-- Explorando: **ciberseguridad** y **análisis de datos**
-
----
-
-## 🤝 Abierto a
-
-- Oportunidades laborales en **industria**, **I+D** o **automatización**
-- Colaboraciones en proyectos técnicos y open-source
-- Posiciones en Argentina, remoto o internacional
-- A futuro: industria, posgrado o investigación
-
----
-
-## 📫 Contacto
-
-- 📧 Email: [valentincoluccio@gmail.com](mailto:valentincoluccio@gmail.com)
-- 💼 LinkedIn: https://www.linkedin.com/in/valentin-coluccio-804301359/
-- 🛠 GitHub: https://github.com/ValentinColuccio
-<!-- - 📄 CV (PDF): enlace próximamente -->
-
----
-
-## 🇬🇧 English
-
-🎓 Advanced **Mechatronics Engineering student**, currently **finishing the degree and preparing final exams**, at  
-_Universidad Nacional de Lomas de Zamora (UNLZ)_, Argentina.
-
-💻 Interested in developing **systems that interact with the physical world**, with a balanced focus on **industry and applied research**.  
-I mainly work with **Python**, have experience in **embedded C**, and have developed solutions combining **computer vision**, **embedded systems**, and **automation**.
-
-🧠 My main interests include:
-- Robotics and automation
-- Human–machine interaction
-- Embedded systems
-
-🎮 *Additional note*: I have extensive experience with **video games across multiple genres (FPS, RPG, MMORPG, Gacha)**, which I consider a **cognitive advantage** in terms of:
-- Problem-solving
-- Decision-making under pressure
-- Systems thinking
-- Coordination and adaptation to complex environments
-
----
-
-## 🔬 Featured Projects
-
-### 🧪 Research Project (Completed – under continuous improvement)
-
-**Graphical user interface for configuring cardiac electrophysiology simulations**, integrated into the **SALOME platform** as a preprocessing module for the **Elvira** simulator.
-
-- Lead author (4 authors)
-- Presented at **MECOM 2025 – Argentine Congress on Computational Mechanics**
-- 📄 Published – DOI: https://doi.org/10.70567/mc.v42.ocsid8567
-- Automates input file generation, material assignment, and solver configuration
-- Improves simulator usability and reduces preparation time and configuration errors
-
----
-
-### 🛠️ Professional Internship (Repository coming soon)
-
-Development of a **polystyrene foam cutter for drone wing manufacturing**, based on a **4-axis CNC system**.
-
-- **RATTMOTOR** stepper drivers
-- Controlled via **Raspberry Pi 4B**
-- Focused on automation, repeatability, and industrial application
-
----
-
-### 🎓 Final Degree Project (Repository coming soon)
-
-Functional model of a **robotic tower crane**, controlled by a **Raspberry Pi Zero 2W** and **Arduino**, capable of:
-
-- Detecting and classifying objects using computer vision
-- Storing them in categorized locations
-- Delivering them on demand through voice commands
-
----
-
-## 🧰 Tools & Technologies
-
-- 🐍 Python | 📟 C (Embedded)
-- 🤖 Raspberry Pi | Arduino
-- 👁️ OpenCV | TensorFlow
-- 🔧 Git | GitHub | VS Code
-- 🧩 Hardware–software integration
-
----
-
-## 🌱 Always learning
-
-- Advanced robotic control
-- Industrial automation and CNC systems
-- Low-power embedded systems
-- Exploring: **cybersecurity** and **data analysis**
+| | |
+|---|---|
+| 🦾 **Robotics & automation** | JAKA collaborative robots · AMRs (load and roller) · Mitsubishi PLC and HMI · Modbus TCP, Ethernet, wired I/O |
+| 👁️ **Machine vision** | SensoPart VISOR · OPT smart cameras · lens, filter and lighting selection · OpenCV |
+| 💻 **Programming** | Python · PyQt5 · Embedded C · G-code / GRBL |
+| 🔌 **Hardware** | Raspberry Pi · ESP32 · Arduino · stepper motors and drivers · 3D printing |
+| 📐 **CAD/CAM** | CATIA · SolidWorks · Fusion 360 |
 
 ---
 
 ## 🤝 Open to
 
-- Job opportunities in **industry**, **R&D**, or **automation**
-- Collaboration on technical and open-source projects
-- Positions in Argentina, remote, or international
-- In the long term: industry, graduate studies, or research
-
----
+Project engineering, automation, robotics and R&D roles — in Argentina, remote or international.
 
 ## 📫 Contact
 
-- 📧 Email: [valentincoluccio@gmail.com](mailto:valentincoluccio@gmail.com)
 - 💼 LinkedIn: https://www.linkedin.com/in/valentin-coluccio-804301359/
-- 🛠 GitHub: https://github.com/ValentinColuccio
-
----
-
-<p align="center">
-  <i>Thanks for stopping by!</i> 🚀
-</p>
-
-
-![Profile view counter on GitHub](https://komarev.com/ghpvc/?username=ValentinColuccio)
+- 📧 Email: valentincoluccio@gmail.com
