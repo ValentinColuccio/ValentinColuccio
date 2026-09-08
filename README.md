@@ -76,5 +76,5 @@ Project engineering, automation, robotics and R&D roles — in Argentina, remote
 
 ## 📫 Contact
 
-- 💼 LinkedIn: https://www.linkedin.com/in/valentin-coluccio-804301359/
+- 💼 LinkedIn: https://www.linkedin.com/in/valentin-coluccio/
 - 📧 Email: valentincoluccio@gmail.com
