@@ -12,7 +12,7 @@
 
 I build systems that do something in the physical world. Right now that means integrating collaborative robots, industrial cameras and PLCs into production lines: automated quality control, robotic cells and internal logistics with AMRs.
 
-I work as a project engineer at **eMoveSolutions**, an integrator of JAKA collaborative robots, SensoPart and OPT machine vision, iPlusMobot AMRs and Mitsubishi PLC automation. My work runs from bench setup to commissioning on the customer's floor — which usually means the interesting part is the day something doesn't work and nobody knows why.
+I work as a project engineer at **eMoveSolutions**, an integrator of JAKA collaborative robots, SensoPart and OPT machine vision, iPlusMobot AMRs and Mitsubishi PLC automation, with a second line of Keenon service robotics for hospitality and facility management. My work runs from bench setup to commissioning on the customer's floor — which usually means the interesting part is the day something doesn't work and nobody knows why.
 
 Mechatronics Engineering degree from **Universidad Nacional de Lomas de Zamora (UNLZ)**, Argentina.
 
@@ -62,7 +62,7 @@ Control architecture is distributed: a Raspberry Pi 4B handles operation and sup
 
 | | |
 |---|---|
-| 🦾 **Robotics & automation** | JAKA collaborative robots · AMRs (load and roller) · Mitsubishi PLC and HMI · Modbus TCP, Ethernet, wired I/O |
+| 🦾 **Robotics & automation** | JAKA collaborative robots · AMRs (load and roller) · Mitsubishi PLC and HMI · DH electric grippers and linear actuators · Modbus TCP, Ethernet, wired I/O |
 | 👁️ **Machine vision** | SensoPart VISOR · OPT smart cameras · lens, filter and lighting selection · OpenCV |
 | 💻 **Programming** | Python · PyQt5 · Embedded C · G-code / GRBL |
 | 🔌 **Hardware** | Raspberry Pi · ESP32 · Arduino · stepper motors and drivers · 3D printing |
